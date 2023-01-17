@@ -23,7 +23,9 @@ body {
     font-size: 12px;
     padding: 5px 12px; }
   body .money-img {
-    width: 150px; }
+    width: 250px;
+    height: 200px;
+    overflow: hidden; }
   body .currency {
     padding: 40px 0;
     display: flex;
