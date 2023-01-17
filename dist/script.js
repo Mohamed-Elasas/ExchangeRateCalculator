@@ -16,7 +16,9 @@ function calculate() {
     })
     .then((data) => {
       const exchangeRate = data.conversion_rates;
-      amountEl_two.value = exchangeRate[currency_two] * amountEl_one.value;
+      amountEl_two.value = (
+        exchangeRate[currency_two] * amountEl_one.value
+      ).toFixed(2);
     })
     .catch((err) => console.log(err));
 }
